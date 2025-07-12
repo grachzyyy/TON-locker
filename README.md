@@ -1,18 +1,46 @@
-# locker
-
-## Project structure
-
-- `src/main.tact` – source code of contract
-- `src/main.spec.ts` – test suite
-- `deploy.ts` – script for deploying the contract
-- `tact.config.json` – compiler settings
+# TON-locker
+Locker tact smart contract 
 
 ## How to use
 
-- `yarn build` – build `.ts` API for contract
-- `yarn test` – build contracts and run jest tests
-- `yarn fmt` – fix source code formatting
-- `yarn lint` – run semantic checks with `misti` linter
-- `yarn verifier:testnet` – deploy contract to testnet
-- `yarn verifier:mainnet` – deploy contract to mainnet
-- `yarn fmt:check` – check source code formatting (for CI)
+First, let's install all the dependencies:
+
+```shell
+yarn install
+```
+
+Now we're ready to build our contract:
+
+```shell
+yarn build
+```
+
+Once you've built our contract, you can deploy it:
+
+```shell
+yarn deploy
+```
+
+Let's look at some other useful commands.
+
+To test your contract after changes, run:
+
+```shell
+yarn test
+```
+
+If you want to quickly check your changes for validity, run:
+
+```shell
+yarn lint
+```
+
+This check will run the Tact source code formatter in the style checking mode and the [misti](https://github.com/nowarp/misti) static analyzer to check for common issues.
+
+If you'd like to format the Tact source code in the [sources](./sources) directory, run:
+
+```shell
+yarn fmt
+```
+
+# TON-locker
