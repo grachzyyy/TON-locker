@@ -42,5 +42,3 @@ If you'd like to format the Tact source code in the [sources](./sources) directo
 ```shell
 yarn fmt
 ```
-
-# TON-locker
